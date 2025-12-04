@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><i class="fas fa-laptop"></i> TechStore</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы контактов -->
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> / <span>Контакты</span>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами любым удобным способом. Мы всегда рады помочь!</p>
+            </div>
+        </section>
+
+        <!-- Контактная информация -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Контактная информация -->
+                    <div class="contact-details">
+                        <h2>Контактная информация</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Техническая, 15, офис 305</p>
+                                <p class="small-text">Ближайшее метро: Технопарк</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Телефоны</h3>
+                                <p>+7 (495) 123-45-67 — основной</p>
+                                <p>+7 (800) 123-45-67 — бесплатный по России</p>
+                                <p>+7 (495) 987-65-43 — отдел продаж</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@techstore.ru — общие вопросы</p>
+                                <p>sales@techstore.ru — отдел продаж</p>
+                                <p>support@techstore.ru — техническая поддержка</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Режим работы</h3>
+                                <p>Пн-Пт: 9:00 — 21:00</p>
+                                <p>Сб-Вс: 10:00 — 20:00</p>
+                                <p class="small-text">Магазин работает без выходных</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h3>Мы в социальных сетях</h3>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-vk"></i> ВКонтакте</a>
+                                <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+                                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Форма обратной связи -->
+                    <div class="contact-form-container">
+                        <h2>Форма обратной связи</h2>
+                        <p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время</p>
+                        
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" required placeholder="Введите ваше имя">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required placeholder="example@mail.ru">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Тема обращения</label>
+                                <select id="subject">
+                                    <option value="">Выберите тему</option>
+                                    <option value="order">Вопрос по заказу</option>
+                                    <option value="product">Вопрос о товаре</option>
+                                    <option value="delivery">Доставка и оплата</option>
+                                    <option value="warranty">Гарантия и сервис</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" required placeholder="Опишите ваш вопрос или проблему..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">Я согласен на обработку персональных данных</label>
+                            </div>
+                            
+                            <button type="submit" class="btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карта и расположение -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Как добраться</h2>
+                <div class="map-container">
+                    <!-- Заглушка для карты -->
+                    <div class="map-placeholder">
+                        <div class="map-overlay">
+                            <h3>Наш магазин на карте</h3>
+                            <p>г. Москва, ул. Техническая, 15</p>
+                            <p>Ближайшее метро: Технопарк (5 мин. пешком)</p>
+                        </div>
+                        <div class="map-mockup">
+                            <div class="map-point">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="map-street"></div>
+                            <div class="map-building">
+                                <div class="building-label">TechStore</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-instructions">
+                        <h3>Инструкция как добраться</h3>
+                        <div class="instruction">
+                            <div class="instruction-icon">
+                                <i class="fas fa-subway"></i>
+                            </div>
+                            <div class="instruction-text">
+                                <h4>На метро</h4>
+                                <p>До станции "Технопарк". Выход №2. Пройти 300 метров прямо по улице Технической.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction">
+                            <div class="instruction-icon">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <div class="instruction-text">
+                                <h4>На автобусе</h4>
+                                <p>Автобусы № 123, 456, 789 до остановки "Улица Техническая".</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction">
+                            <div class="instruction-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="instruction-text">
+                                <h4>На автомобиле</h4>
+                                <p>Есть парковка на 50 мест рядом со зданием. Первый час бесплатно.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Часто задаваемые вопросы -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Какие способы оплаты вы принимаете?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы принимаем наличные, банковские карты (Visa, MasterCard, Мир), оплату через онлайн-банки и электронные кошельки (СБП, ЮMoney, QIWI). Также доступна оплата при получении.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Сколько времени занимает доставка?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>В пределах МКАД — 2-4 часа при наличии товара на складе. По Москве и области — 1-2 дня. В регионы — от 3 до 10 дней в зависимости от удаленности.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли вернуть товар?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, согласно закону о защите прав потребителей, вы можете вернуть товар надлежащего качества в течение 14 дней без объяснения причин. Техника должна быть в оригинальной упаковке без следов использования.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Какой срок гарантии на технику?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>На всю технику предоставляется официальная гарантия от производителя сроком от 1 до 3 лет в зависимости от категории товара. Дополнительно мы предоставляем расширенную гарантию до 5 лет.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-laptop"></i> TechStore</h3>
+                    <p>Мы предлагаем лучшую технику по доступным ценам с гарантией и быстрой доставкой.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Техническая, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@techstore.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechStore. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

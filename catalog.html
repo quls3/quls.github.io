@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог техники - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><i class="fas fa-laptop"></i> TechStore</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html" class="active">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы каталога -->
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> / <span>Каталог</span>
+            </div>
+        </section>
+
+        <!-- Заголовок каталога -->
+        <section class="catalog-header">
+            <div class="container">
+                <h1>Каталог техники</h1>
+                <p>Выберите категорию или используйте фильтр для поиска нужного товара</p>
+            </div>
+        </section>
+
+        <!-- Каталог товаров -->
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog-content">
+                    <!-- Фильтры -->
+                    <aside class="filters">
+                        <h3>Фильтры</h3>
+                        <div class="filter-group">
+                            <h4>Категории</h4>
+                            <ul class="category-list">
+                                <li><a href="#laptops" class="active">Ноутбуки</a></li>
+                                <li><a href="#smartphones">Смартфоны</a></li>
+                                <li><a href="#tablets">Планшеты</a></li>
+                                <li><a href="#accessories">Аксессуары</a></li>
+                                <li><a href="#tv">Телевизоры</a></li>
+                                <li><a href="#audio">Аудиотехника</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Цена, ₽</h4>
+                            <div class="price-range">
+                                <div class="range-inputs">
+                                    <input type="number" placeholder="0" min="0" max="500000" value="0" class="min-price">
+                                    <span>—</span>
+                                    <input type="number" placeholder="500000" min="0" max="500000" value="500000" class="max-price">
+                                </div>
+                                <input type="range" min="0" max="500000" value="0" class="range-slider" id="price-slider">
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Бренды</h4>
+                            <div class="brand-filters">
+                                <label><input type="checkbox" checked> Apple</label>
+                                <label><input type="checkbox" checked> Samsung</label>
+                                <label><input type="checkbox" checked> Xiaomi</label>
+                                <label><input type="checkbox" checked> ASUS</label>
+                                <label><input type="checkbox" checked> Sony</label>
+                                <label><input type="checkbox" checked> HP</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-filter">Применить фильтры</button>
+                    </aside>
+
+                    <!-- Список товаров -->
+                    <div class="products">
+                        <div class="products-header">
+                            <h2 id="laptops">Ноутбуки</h2>
+                            <div class="sort-options">
+                                <span>Сортировка:</span>
+                                <select>
+                                    <option>По популярности</option>
+                                    <option>По возрастанию цены</option>
+                                    <option>По убыванию цены</option>
+                                    <option>По новизне</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="products-grid">
+                            <!-- Товар 1 -->
+                            <div class="product-card">
+                                <div class="product-badge">Хит</div>
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ноутбук ASUS">
+                                </div>
+                                <h3>Ноутбук ASUS VivoBook 15</h3>
+                                <p class="product-desc">15.6" FHD, Intel Core i5, 8GB RAM, 512GB SSD</p>
+                                <div class="product-price">
+                                    <span class="current-price">54 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                            
+                            <!-- Товар 2 -->
+                            <div class="product-card">
+                                <div class="product-badge">Акция</div>
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="MacBook Pro">
+                                </div>
+                                <h3>Apple MacBook Pro 14"</h3>
+                                <p class="product-desc">14.2", Apple M2 Pro, 16GB RAM, 512GB SSD</p>
+                                <div class="product-price">
+                                    <span class="current-price">149 990 ₽</span>
+                                    <span class="old-price">169 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                            
+                            <!-- Товар 3 -->
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ноутбук HP">
+                                </div>
+                                <h3>Ноутбук HP Pavilion 15</h3>
+                                <p class="product-desc">15.6" FHD, AMD Ryzen 5, 16GB RAM, 1TB SSD</p>
+                                <div class="product-price">
+                                    <span class="current-price">67 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                            
+                            <!-- Товар 4 -->
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Игровой ноутбук">
+                                </div>
+                                <h3>Игровой ноутбук MSI Katana</h3>
+                                <p class="product-desc">15.6" FHD, Intel Core i7, 16GB RAM, RTX 4060</p>
+                                <div class="product-price">
+                                    <span class="current-price">124 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                        </div>
+                        
+                        <h2 id="smartphones" class="category-title">Смартфоны</h2>
+                        <div class="products-grid">
+                            <!-- Товар 5 -->
+                            <div class="product-card">
+                                <div class="product-badge">Новинка</div>
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy S23">
+                                </div>
+                                <h3>Samsung Galaxy S23</h3>
+                                <p class="product-desc">6.1" Dynamic AMOLED, 128GB, черный</p>
+                                <div class="product-price">
+                                    <span class="current-price">74 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                            
+                            <!-- Товар 6 -->
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="iPhone 14">
+                                </div>
+                                <h3>Apple iPhone 14 Pro</h3>
+                                <p class="product-desc">6.1" Super Retina XDR, 128GB, фиолетовый</p>
+                                <div class="product-price">
+                                    <span class="current-price">99 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                            
+                            <!-- Товар 7 -->
+                            <div class="product-card">
+                                <div class="product-badge">Акция</div>
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Xiaomi 13">
+                                </div>
+                                <h3>Xiaomi 13 Lite</h3>
+                                <p class="product-desc">6.55" AMOLED, 128GB, 8GB RAM, голубой</p>
+                                <div class="product-price">
+                                    <span class="current-price">34 990 ₽</span>
+                                    <span class="old-price">39 990 ₽</span>
+                                </div>
+                                <a href="#" class="btn btn-small">В корзину</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Пагинация -->
+                        <div class="pagination">
+                            <a href="#" class="page-link active">1</a>
+                            <a href="#" class="page-link">2</a>
+                            <a href="#" class="page-link">3</a>
+                            <a href="#" class="page-link">4</a>
+                            <span>...</span>
+                            <a href="#" class="page-link">10</a>
+                            <a href="#" class="page-link next">Следующая →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-laptop"></i> TechStore</h3>
+                    <p>Мы предлагаем лучшую технику по доступным ценам с гарантией и быстрой доставкой.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Магазин техники</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><i class="fas fa-laptop"></i> TechStore</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент главной страницы -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Техника будущего уже сегодня</h1>
+                    <p>Лучшие ноутбуки, смартфоны, гаджеты и аксессуары с доставкой по всей стране</p>
+                    <a href="catalog.html" class="btn">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="advantages">
+            <div class="container">
+                <h2>Почему выбирают нас</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставка по городу за 2 часа, по стране — 1-3 дня</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Гарантия 2 года</h3>
+                        <p>Официальная гарантия на всю технику от производителя</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Круглосуточная техническая поддержка и консультации</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <h3>Легкий возврат</h3>
+                        <p>Возврат товара в течение 14 дней без объяснения причин</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные категории -->
+        <section class="categories">
+            <div class="container">
+                <h2>Популярные категории</h2>
+                <div class="categories-grid">
+                    <a href="catalog.html#laptops" class="category-card">
+                        <div class="category-img">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Ноутбуки</h3>
+                        <p>от 25 990 ₽</p>
+                    </a>
+                    <a href="catalog.html#smartphones" class="category-card">
+                        <div class="category-img">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Смартфоны</h3>
+                        <p>от 12 990 ₽</p>
+                    </a>
+                    <a href="catalog.html#tablets" class="category-card">
+                        <div class="category-img">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <h3>Планшеты</h3>
+                        <p>от 15 990 ₽</p>
+                    </a>
+                    <a href="catalog.html#accessories" class="category-card">
+                        <div class="category-img">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h3>Аксессуары</h3>
+                        <p>от 990 ₽</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Акционные товары -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Акционные предложения</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Акция</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ноутбук ASUS">
+                        </div>
+                        <h3>Ноутбук ASUS VivoBook 15</h3>
+                        <p class="product-desc">15.6" FHD, Intel Core i5, 8GB RAM, 512GB SSD</p>
+                        <div class="product-price">
+                            <span class="current-price">54 990 ₽</span>
+                            <span class="old-price">62 990 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn-small">В корзину</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge">Хит продаж</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Смартфон Samsung">
+                        </div>
+                        <h3>Samsung Galaxy S23</h3>
+                        <p class="product-desc">6.1" Dynamic AMOLED, 128GB, черный</p>
+                        <div class="product-price">
+                            <span class="current-price">74 990 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn-small">В корзину</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge">Новинка</div>
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Наушники Sony">
+                        </div>
+                        <h3>Наушники Sony WH-1000XM5</h3>
+                        <p class="product-desc">Беспроводные, шумоподавление, черные</p>
+                        <div class="product-price">
+                            <span class="current-price">29 990 ₽</span>
+                            <span class="old-price">34 990 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn-small">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-laptop"></i> TechStore</h3>
+                    <p>Мы предлагаем лучшую технику по доступным ценам с гарантией и быстрой доставкой.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Техническая, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@techstore.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechStore. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
